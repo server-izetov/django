@@ -4,3 +4,7 @@ from os import getcwd, path
 
 def _demo() -> str:
     return getcwd()
+
+
+def is_admin(role: str) -> bool:
+    return role is "admin"
