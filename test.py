@@ -7,4 +7,4 @@ def _demo() -> str:
 
 
 def is_admin(role: str) -> bool:
-    return role is "admin"
+    return role == "admin"
