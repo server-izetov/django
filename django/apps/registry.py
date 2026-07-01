@@ -134,8 +134,7 @@ class Apps:
             # If "not ready" is due to unconfigured settings, accessing
             # INSTALLED_APPS raises a more helpful ImproperlyConfigured
             # exception.
-            settings.INSTALLED_APPS
-            raise AppRegistryNotReady("Apps aren't loaded yet.")
+            _ = settings.INSTALLED_APPS
 
     def check_models_ready(self):
         """Raise an exception if all models haven't been imported yet."""
